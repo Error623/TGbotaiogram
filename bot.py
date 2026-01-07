@@ -115,7 +115,7 @@ async def reminder_worker(bot: Bot,):
         for lead_id, tg_id in leads:
             try:
                 await bot.send_message(
-                    tg_id, # подчёркнут tg_id
+                    tg_id, 
                     "Напоминание о вашей заявке. Если актуально - напишите нам"
                 )
                 mark_reminder_sent(lead_id)
